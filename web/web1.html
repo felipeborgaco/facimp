@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="intro">
+    <h1>WorldWideWeb: Proposta para um Projeto de Hipertexto</h1>
+    <p>Para:</p>
+    <p class="espaco">PG Innocenti/ECP, G. Kellner/ECP, DO Williams/CN</p>
+    <p>Cópia arquivada</p>
+    <p class="espaco">
+      R. Brun/CN, K. Gieselmann/ECP, R. Jones/ECP, T. Osborne/CN, P.
+      Palazzi/ECP, N. Pellow/CN, B. Pollermann/CN, EM Rimmer/ECP
+    </p>
+    <p>De:</p>
+    <p class="espaco">T. Berners-Lee/CN, R. Cailliau/ECP</p>
+    <p>Data:</p>
+    <p class="espaco">12 de novembro de 1990</p>
+    <p>
+    </div>
+      <br />O documento em anexo descreve com mais detalhes um projeto de
+      hipertexto.
+    </p>
+    <p>
+      <br />HyperText é uma maneira de vincular e acessar informações de vários
+      tipos como uma rede de nós na qual o usuário pode navegar à vontade. Ele
+      fornece uma única interface de usuário para grandes classes de informações
+      (relatórios, notas, bancos de dados, documentação de computador e ajuda
+      on-line). Propomos um esquema simples incorporando servidores já
+      disponíveis no CERN.
+    </p>
+    <p>
+      O projeto tem duas fases: primeiramente, fazemos uso de software e
+      hardware existentes, bem como implementamos navegadores simples para as
+      estações de trabalho do usuário, com base em uma análise dos requisitos
+      para necessidades de acesso à informação por meio de experimentos. Em
+      segundo lugar, estendemos a área de aplicação, permitindo também que os
+      usuários adicionem novos materiais.
+    </p>
+    <p>
+      A primeira fase deve levar 3 meses com o complemento total de mão de obra,
+      a segunda fase mais 3 meses, mas esta fase é mais aberta, e uma revisão de
+      necessidades e desejos será incorporada a ela.
+    </p>
+    <p>
+      A mão de obra necessária é de 4 engenheiros de software e um programador
+      (um dos quais pode ser um Fellow). Cada pessoa trabalha em uma parte
+      específica (por exemplo, suporte de plataforma específica).
+    </p>
+    <p>
+      Cada pessoa precisará de uma estação de trabalho de última geração, mas
+      deve haver uma de cada um dos tipos suportados. Elas custarão de 10 a 20k
+      cada, totalizando 50k. Além disso, gostaríamos de usar software disponível
+      comercialmente tanto quanto possível, e prevemos uma despesa de 30k
+      durante o desenvolvimento para licenças de usuário único, visitas a
+      instalações existentes e consultoria.
+    </p>
+    <p>
+      Assumiremos que o projeto pode contar com algum suporte de computação sem
+      custo: espaço de arquivo de desenvolvimento em sistemas de desenvolvimento
+      existentes, instalação e suporte do gerenciador de sistema para software
+      daemon.
+    </p>
+    <a href="http://127.0.0.1:5500/People.html#BernersLee">T Berners-Lee</a>
+    <a href="http://127.0.0.1:5500/People.html#Cailliau">R Cailliau</a>
+    <h1>Rede mundial de computadores:</h1>
+    <p>
+      Proposta para um Projeto de Hipertexto
+      <br />
+      T. Berners-Lee / CN, R. Cailliau / ECP
+    </p>
+    <h1>Resumo:</h1>
+    <p>
+      HyperText é uma maneira de vincular e acessar informações de vários tipos
+      como uma rede de nós na qual o usuário pode navegar à vontade.
+      Potencialmente, o HyperText fornece uma única interface de usuário para
+      muitas classes grandes de informações armazenadas, como relatórios, notas,
+      bancos de dados, documentação de computador e ajuda de sistemas on-line.
+      Propomos a implementação de um esquema simples para incorporar vários
+      servidores diferentes de informações armazenadas em máquinas já
+      disponíveis no CERN,incluindo uma análise dos requisitos para necessidades
+      de acesso à informação por experimentos.
+    </p>
+    <h1>Introdução</h1>
+    <p>
+      As atuais incompatibilidades das plataformas e ferramentas tornam
+      impossível acessar informações existentes por meio de uma interface comum,
+      levando a desperdício de tempo, frustração e respostas obsoletas para uma
+      simples pesquisa de dados. Há um grande benefício potencial na integração
+      de uma variedade de sistemas de uma forma que permita que um usuário siga
+      links apontando de uma informação para outra. Essa formação de uma rede de
+      nós de informação em vez de uma árvore hierárquica ou uma lista ordenada é
+      o conceito básico por trás do HyperText.
+    </p>
+    <p>
+      No CERN, uma variedade de dados já está disponível: relatórios, dados de
+      experimentos, dados de pessoal, listas de endereços de e-mail,
+      documentação de computador, documentação de experimentos e muitos outros
+      conjuntos de dados estão girando em discos de computador continuamente. No
+      entanto, é impossível "pular" de um conjunto para outro de forma
+      automática: uma vez que você descobre que o nome de Joe Bloggs está
+      listado em uma descrição incompleta de algum software on-line, não é fácil
+      encontrar seu endereço de e-mail atual. Normalmente, você terá que usar um
+      método de pesquisa diferente em um computador diferente com uma interface
+      de usuário diferente. Uma vez que você tenha localizado as informações, é
+      difícil manter um link para elas ou fazer uma nota privada sobre elas que
+      você poderá encontrar rapidamente mais tarde.
+    </p>
+    <h1>Conceitos de hipertexto</h1>
+    <p>
+      Os princípios do hipertexto e sua aplicabilidade ao ambiente do CERN são discutidos mais detalhadamente
+em [1], um glossário de termos técnicos é fornecido em [2]. Aqui damos uma breve apresentação do
+hipertexto.
+    </p>
+    <p>
+      Um programa que fornece acesso ao mundo do hipertexto que chamamos de navegador. Ao iniciar um
+navegador de hipertexto em sua estação de trabalho, você primeiro verá uma página de hipertexto que é
+pessoal para você: suas notas pessoais, se preferir. Uma página de hipertexto tem pedaços de texto que se
+referem a outros textos. Essas referências são destacadas e podem ser selecionadas com um mouse (em
+terminais burros, elas apareceriam em uma lista numerada e a seleção seria feita inserindo um número).
+Quando você seleciona uma referência, o navegador apresenta o texto que é referenciado: você fez o
+navegador seguir um link de hipertexto:
+    </p>
+    <p>
+      (ver Fig. 1: links de hipertexto)
+    </p>
+    <p>
+      O texto em si tem links para outros textos e assim por diante. Na fig. 1, clicar no GHI levaria você para as
+atas daquela reunião. Lá você se interessaria pela discussão do UPS e clicaria na palavra destacada UPS para
+saber mais sobre ela.
+    </p>
+    <p>
+      Os textos são interligados de uma forma que se pode ir de um conceito a outro para encontrar a informação
+que se deseja. A rede de links é chamada de web. A web não precisa ser hierárquica e, portanto, não é
+necessário "subir em uma árvore" novamente antes de poder descer para um assunto diferente, mas
+relacionado. A web também não é completa, pois é difícil imaginar que todos os links possíveis seriam
+colocados por autores. No entanto, um pequeno número de links geralmente é suficiente para ir de qualquer
+lugar para qualquer outro lugar em um pequeno número de saltos.
+    </p>
+  </body>
+</html>
+<style>
+  .espaco {
+    padding-left: 2rem;
+  }
+  body {
+    margin: auto;
+    width: 80%;
+    font-family: Helvetica, sans-serif;
+  }
+  .intro{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
