@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </div>
+        </ul>
+        <div>
+            <input type="text" placeholder="email">
+            <input type="text" placeholder="senha">
+            <input type="submit" value="Login" class="btn">
+        </div>
+    </nav>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li,
+    input {
+        list-style: none;
+        display: inline;
+        padding: 0 1rem;
+    }
+
+    div {
+        align-content: right;
+        padding-right: 10rem;
+
+    }
+
+    input {
+        padding: 0.25rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+        background-color: rgb(39, 37, 37);
+        width: 100%;
+
+    }
+
+    .btn {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 2px;
+    }
+</style>
+
+</html>
