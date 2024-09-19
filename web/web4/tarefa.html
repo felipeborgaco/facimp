@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="num1" placeholder="num1">
+        <input type="number" id="num2" placeholder="num2">
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+        <button onclick="clear()">c</button>
+        <input type="text" id="resultado" placeholder="resultado">
+
+    </form>
+    <script>
+        function somar() {
+            event.preventDefault();
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            document.getElementById("resultado").value = parseInt(num1) + parseInt(num2);
+        }
+
+        function subtrair() {
+            event.preventDefault();
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            document.getElementById("resultado").value = parseInt(num1) - parseInt(num2);
+        }
+
+        function multiplicar() {
+            event.preventDefault();
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            document.getElementById("resultado").value = parseInt(num1) * parseInt(num2);
+        }
+
+        function dividir() {
+            event.preventDefault();
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            document.getElementById("resultado").value = parseInt(num1) / parseInt(num2);
+        }
+        function clear() {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("resultado").value = "";
+        }
+    </script>
+</body>
+
+</html>
